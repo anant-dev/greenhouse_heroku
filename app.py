@@ -17,10 +17,10 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'this_should_be_configur
 
 import json
 CORS(app)
-@app.route('/get/' , methods = ['GET','POST'])
+@app.route('/get/' , methods = ['GET'])
 def get():
     with open("data.json", 'r') as file:
-        return jsonify(json.loads(file.read()))
+    return jsonify(json.loads(file.read()))
 
 
 @app.route('/post/' , methods = ['GET','POST'])
