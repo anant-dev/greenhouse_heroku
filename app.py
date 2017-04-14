@@ -29,7 +29,7 @@ def post():
     data = dict()
     data['temp'] = content.get('Temperature')
     data['humidity'] = content.get('Humidity')
-    data['mousture'] = content.get('Soil Moisture')
+    data['moisture'] = content.get('Soil Moisture')
     data['light'] = content.get('Light Intensity')
     with open("data.json", 'w') as file:
       file.write(json.dumps(data))
