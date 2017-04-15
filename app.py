@@ -20,7 +20,7 @@ CORS(app)
 @app.route('/get/' , methods = ['GET'])
 def get():
     with open("data.json", 'r') as file:
-        return jsonify(json.loads(file.read()))
+    return jsonify(json.loads(file.read()))
 
 
 @app.route('/post/' , methods = ['GET','POST'])
