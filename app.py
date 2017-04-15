@@ -13,7 +13,7 @@ from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = environ.get('SECRET_KEY', 'this_should_be_configured')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'this_should_be_configured')
 
 import json
 CORS(app)
