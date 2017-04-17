@@ -1,1 +1,6 @@
 
+{'temp':{'min' : '20','max':'23'},
+ 'humidity':{'min' : '23','max':'43'},
+ 'light':{'min' : '10','max':'33'},
+ 'moisture':{'min' : '20.33','max':'45.23'}
+}
