@@ -1,6 +1,18 @@
-
-{'temp':{'min' : '20','max':'23'},
- 'humidity':{'min' : '23','max':'43'},
- 'light':{'min' : '10','max':'33'},
- 'moisture':{'min' : '20.33','max':'45.23'}
+{
+  "humidity": {
+    "max": 12.3, 
+    "min": 22.3
+  }, 
+  "light": {
+    "max": null, 
+    "min": null
+  }, 
+  "moisture": {
+    "max": null, 
+    "min": null
+  }, 
+  "temp": {
+    "max": null, 
+    "min": null
+  }
 }
