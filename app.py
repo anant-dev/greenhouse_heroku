@@ -32,7 +32,7 @@ def post():
     data['temp'] = content.get('Temperature')
     data['humidity'] = content.get('Humidity')
     data['moisture'] = content.get('SoilMoisture')
-    data['light'] = content.get('LightIntensity')
+    data['status'] = content.get('status')
     with open("data.json", 'w') as file:
       file.write(json.dumps(data))
     return jsonify('success')
@@ -44,15 +44,15 @@ def min_max_data():
         with open("min_max_data.json", 'r') as file:
             return jsonify(json.loads(file.read()))
     content = request.get_json()
-    data = dict(temp={}, humidity={}, moisture={}, light={})
+    data = dict(temp={}, humidity={}, moisture={}, status={})
     data['temp']['min'] = content.get('temperature_min')
     data['temp']['max'] = content.get('temperature_max')
     data['humidity']['min'] = content.get('humidity_min')
     data['humidity']['max'] = content.get('humidity_max')
     data['moisture']['min'] = content.get('soil_moisture_min')
     data['moisture']['max'] = content.get('soil_moisture_max')
-    data['light']['min'] = content.get('light_intensity_min')
-    data['light']['max'] = content.get('light_intensity_max')
+    data['status']['min'] = content.get('light_intensity_min')
+    data['status']['max'] = content.get('light_intensity_max')
     with open("min_max_data.json", 'w') as file:
       file.write(json.dumps(data))
     return jsonify('success')
