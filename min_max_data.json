@@ -3,7 +3,7 @@
     "max": "12.3", 
     "min": "22.3"
   }, 
-  "light": {
+  "status": {
     "max": null, 
     "min": null
   }, 
